@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Primer Paso hacia tu Cambio Físico</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", Arial, sans-serif;
+        background: linear-gradient(120deg, #f7fafc, #faf2f2 100%);
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: #222;
+      }
+      .container {
+        max-width: 540px;
+        margin: 40px auto 0 auto;
+        padding: 32px;
+        box-shadow: 0 8px 32px rgba(44, 45, 56, 0.1);
+        background: #fff;
+        border-radius: 24px;
+        border: 1px solid #eee;
+      }
+      .titulo-motivacional {
+        font-size: 1.65rem;
+        font-weight: 700;
+        margin-bottom: 18px;
+        color: #fa0303;
+        text-align: center;
+        line-height: 1.22;
+        letter-spacing: -0.03em;
+      }
+      .intro-motivacional {
+        font-size: 1.02rem;
+        color: #333;
+        line-height: 1.55;
+        margin-bottom: 18px;
+      }
+      .bullet-list {
+        margin: 22px 0 12px 0;
+        padding-left: 16px;
+      }
+      .bullet-list li {
+        margin-bottom: 11px;
+        font-size: 0.99rem;
+        list-style: none;
+        position: relative;
+        padding-left: 1.5em;
+      }
+      .bullet-list li:before {
+        content: "→";
+        color: #fa0303;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        font-size: 1.07em;
+        top: 1px;
+      }
+      .llama {
+        font-size: 1.3em;
+        color: #fa0303;
+        margin-right: 5px;
+      }
+      .rellena-mensaje {
+        margin: 25px 0 30px 0;
+        font-weight: 600;
+        font-size: 1.07rem;
+        color: #fa0303;
+        text-align: center;
+      }
+      label {
+        display: block;
+        font-weight: 500;
+        margin: 18px 0 4px 0;
+        color: #333;
+        font-size: 0.99rem;
+        letter-spacing: 0.1px;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 12px 10px;
+        border: 1.4px solid #e0e0e0;
+        border-radius: 9px;
+        margin-bottom: 4px;
+        font-size: 1rem;
+        resize: vertical;
+        font-family: inherit;
+        background: #f9f9fb;
+        transition: border 0.18s;
+      }
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-color: #f76918;
+        outline: none;
+        background: #fff;
+      }
+      .required {
+        color: #f60404;
+        font-size: 1.15em;
+        margin-left: 3px;
+      }
+      .consent {
+        font-size: 0.94rem;
+        margin-top: 22px;
+        color: #444;
+      }
+      .btn-primary {
+        display: block;
+        width: 100%;
+        background: linear-gradient(90deg, #fb6607, #fdaa2c 96%);
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 9px;
+        font-size: 1.11rem;
+        padding: 15px;
+        margin: 28px 0 0 0;
+        box-shadow: 0 2px 6px rgba(44, 45, 56, 0.1);
+        cursor: pointer;
+        letter-spacing: 0.07em;
+        transition: background 0.16s;
+      }
+      .btn-primary:hover {
+        background: linear-gradient(90deg, #fa0303, #fa0303 100%);
+      }
+      .note {
+        font-size: 0.94rem;
+        color: #888;
+        margin-bottom: 2px;
+        margin-top: 19px;
+        text-align: right;
+      }
+      @media (max-width: 640px) {
+        .container {
+          padding: 15px;
+          border-radius: 11px;
+          margin: 16px 6px;
+        }
+        .titulo-motivacional {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="titulo-motivacional">
+        EL PRIMER PASO HACIA EL CUERPO QUE ESTÁS BUSCANDO
+      </div>
+      <br />
+      <div class="intro-motivacional">
+        Estás cansado de intentarlo todo y no ver resultados. De hacer dietas,
+        rutinas, motivarte un par de días y
+        <b>volver al mismo punto de siempre, o incluso peor.</b><br />
+        No es tu culpa. Nadie te ha guiado cómo se debe. Nadie te ha acompañado
+        de verdad.<br />
+        <b>Pero eso se acabó.</b><br /><br />
+        <div
+          style="
+            display: flex;
+            gap: 22px;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+          "
+        >
+          <img
+            src="fotos/anxo1.JPG"
+            alt="Foto 1"
+            style="
+              max-height: 220px;
+              border-radius: 18px;
+              width: auto;
+              max-width: 48vw;
+              box-shadow: 0 2px 12px #0001;
+            "
+          />
+
+          <img
+            src="fotos/flecha-removebg-preview.png"
+            alt="Flecha"
+            style="max-height: 220px; width: auto; max-width: 48vw"
+          />
+
+          <img
+            src="fotos/anxo2.JPG"
+            alt="Foto 2"
+            style="
+              max-height: 220px;
+              border-radius: 18px;
+              width: auto;
+              max-width: 48vw;
+              box-shadow: 0 2px 12px #0001;
+            "
+          />
+        </div>
+
+        <br />
+        <br />
+        Conseguí este cambio físico en <b>solo 2 años</b>, y llevo
+        <b>5 años haciendo ejercicio</b>. Pasé de entrenar en casa con calistenia a dominar
+        el gimnasio, desarrollando tanto la capacidad de ganar masa muscular
+        como la de perder grasa. Todo esto lo logré a base de errores, estudio,
+        entrenadores personales, estancamientos y esfuerzo. <br />Pero ahora,
+        <b>CLARAMENTE, ya no te va a pasar a ti.</b>
+        <br />
+        <br />
+        <b>Conmigo lograrás el cambio que llevas años deseando.</b> No importa
+        si ahora mismo te ves lejos. Yo sé cómo llevarte paso a paso hasta esa
+        versión de ti con la que sueñas — fuerte, seguro/a, feliz, con un cuerpo
+        que por fin te haga sentir orgulloso/a cada vez que te mires al
+        espejo.<br />
+        He ayudado a personas que estaban igual o peor que tú… y ahora están
+        irreconocibles. Y si ellos pudieron, tú también vas a poder.
+        <b>Con mi método, contigo al 100%, y con un plan real.</b><br />
+        <b
+          >Este formulario es solo para personas decididas a dar el paso. Si
+          estás listo/a para invertir en ti, en serio, este es el momento.</b
+        >
+      </div>
+
+      <ul class="bullet-list">
+        <li>
+          Plan a tu completa medida para que no sufras consiguiendo tu cambio y
+          sea muy fácil, con contacto conmigo las 24 horas.
+        </li>
+        <li>
+          Conmigo aprenderás el por qué de las cosas para que en muy poco tiempo
+          puedas hacerlo solo y seguir progresando sin mí, no como todos los
+          entrenadores que te pautan cosas, no te las explican y te quieren
+          cobrar todos los meses durante 2 años.
+        </li>
+        <li>Plazas limitadas, para dar el mejor servicio :)</li>
+        <li>
+          Y cuando consigas al fin tu cambio... Te regalaré una camiseta del SK
+          Team, personalizada con tu nombre, hecha a mano personalmente por mí.
+        </li>
+      </ul>
+
+      <div class="rellena-mensaje">
+        <span class="llama">&#128293;</span>
+        Rellena esto con sinceridad. Yo me encargo del resto.<br />
+        Vamos a por ese cambio real. Ya no estás solo.
+      </div>
+
+      <form
+        action="guardar_datos.php"
+        method="POST"
+        autocomplete="on"
+      >
+        <label for="nombre"
+          >¿Cuál es tu nombre completo? <span class="required">*</span></label
+        >
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          required
+          maxlength="90"
+          autocomplete="name"
+        />
+
+        <label for="edad"
+          >¿Qué edad tienes? <span class="required">*</span></label
+        >
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          min="10"
+          max="99"
+          step="1"
+          required
+        />
+
+        <label for="molestia"
+          >¿Qué te molesta más de tu cuerpo o de cómo te sientes contigo mismo/a
+          ahora? <span class="required">*</span></label
+        >
+        <textarea
+          name="molestia"
+          id="molestia"
+          rows="2"
+          required
+          maxlength="1000"
+        ></textarea>
+
+        <label for="historial"
+          >¿Has intentado cambiar tu físico antes? ¿Qué pasó?
+          <span class="required">*</span></label
+        >
+        <textarea
+          name="historial"
+          id="historial"
+          rows="2"
+          required
+          maxlength="1000"
+        ></textarea>
+
+        <label for="impacto"
+          >¿Cómo crees que tener el físico de tus sueños afectaría a tu vida?
+          <span class="required">*</span></label
+        >
+        <textarea
+          name="impacto"
+          id="impacto"
+          rows="2"
+          required
+          maxlength="1000"
+        ></textarea>
+
+        <label for="razon"
+          >¿Por qué debería elegirte a ti para cambiar tu cuerpo y no a los
+          demás? <span class="required">*</span></label
+        >
+        <textarea
+          name="razon"
+          id="razon"
+          rows="2"
+          required
+          maxlength="1000"
+        ></textarea>
+
+        <label for="gmail">¿Cuál es tu Gmail personal?</label>
+        <input
+          type="email"
+          name="gmail"
+          id="gmail"
+          maxlength="120"
+          autocomplete="email"
+        />
+
+        <label for="instagram"
+          >¿Cuál es tu @ de Instagram?<br />
+          <span class="note">Por ejemplo, @sk.fitss</span>
+        </label>
+        <input
+          type="text"
+          name="instagram"
+          id="instagram"
+          maxlength="60"
+          autocomplete="off"
+        />
+
+        <label for="telefono">¿Cuál es tu número de teléfono?</label>
+        <input
+          type="tel"
+          name="telefono"
+          id="telefono"
+          maxlength="18"
+          autocomplete="tel"
+        />
+
+        <label for="inversion"
+          >¿Estás dispuesto/a a invertir en ti mismo/a con un plan
+          personalizado, seguimiento diario y todo lo necesario para transformar
+          tu cuerpo, sabiendo que los programas con mi acompañamiento completo
+          parten desde solo 99 € al mes (o el equivalente a tu moneda)?<span class="required">*</span></label
+        >
+        <select name="inversion" id="inversion" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="si">
+            Sí, lo tengo claro. Es el momento de hacerlo bien y conseguir mi
+            sueño
+          </option>
+          <option value="no">
+            No, prefiero gastar mi dinero en otras cosas que me alejan de mi
+            objetivo
+          </option>
+        </select>
+
+        <label for="contacto"
+          >¿Por dónde te gustaría que te contactara para estudiar tu caso y
+          agendar una llamada? <span class="required">*</span></label
+        >
+        <select name="contacto" id="contacto" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="gmail">Correo electrónico</option>
+          <option value="instagram">Instagram</option>
+          <option value="telefono">WhatsApp / llamada telefónica</option>
+        </select>
+
+        <div class="consent">
+          Este formulario es solo para personas comprometidas. Tus datos no
+          serán compartidos.
+        </div>
+        <button type="submit" class="btn-primary">Enviar mis respuestas</button>
+      </form>
+      <div class="note" style="text-align: left">
+        Si tienes dudas, escríbeme: <b>skfit03@gmail.com</b>
+      </div>
+      <img
+        src="fotos/firma.png"
+        alt="Descripción de la foto"
+        style="
+          display: block;
+          margin: 30px auto 0 auto;
+          max-width: 180px;
+          width: 100%;
+          border-radius: 12px;
+        "
+      />
+    </div>
+  </body>
+</html>
