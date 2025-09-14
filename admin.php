@@ -1,7 +1,6 @@
 <?php
-// --- CONFIGURACIÓN DE ACCESO ---
-$usuarioPermitido = 'anxo';
-$contrasenaPermitida = 'manea.2006';
+require 'credenciales.php';
+
 
 session_start();
 
