@@ -27,7 +27,7 @@
         border: 1px solid #eee;
       }
       .titulo-motivacional {
-        font-size: 1.65rem;
+        font-size: clamp(2.2rem, 4vw, 2.4rem);
         font-weight: 700;
         margin-bottom: 18px;
         color: #fa0303;
@@ -35,43 +35,12 @@
         line-height: 1.22;
         letter-spacing: -0.03em;
       }
+
       .intro-motivacional {
         font-size: 1.02rem;
         color: #333;
         line-height: 1.55;
         margin-bottom: 18px;
-      }
-      .bullet-list {
-        margin: 22px 0 12px 0;
-        padding-left: 16px;
-      }
-      .bullet-list li {
-        margin-bottom: 11px;
-        font-size: 0.99rem;
-        list-style: none;
-        position: relative;
-        padding-left: 1.5em;
-      }
-      .bullet-list li:before {
-        content: "→";
-        color: #fa0303;
-        font-weight: bold;
-        position: absolute;
-        left: 0;
-        font-size: 1.07em;
-        top: 1px;
-      }
-      .llama {
-        font-size: 1.3em;
-        color: #fa0303;
-        margin-right: 5px;
-      }
-      .rellena-mensaje {
-        margin: 25px 0 30px 0;
-        font-weight: 600;
-        font-size: 1.07rem;
-        color: #fa0303;
-        text-align: center;
       }
       label {
         display: block;
@@ -145,117 +114,140 @@
           margin: 16px 6px;
         }
         .titulo-motivacional {
-          font-size: 1.1rem;
+          font-size: 2rem;
         }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="titulo-motivacional">
-        EL PRIMER PASO HACIA EL CUERPO QUE ESTÁS BUSCANDO
-      </div>
-      <br />
+      <div class="titulo-motivacional">ESTAS A UN PASO DE TU CAMBIO FÍSICO</div>
+
       <div class="intro-motivacional">
-        Estás cansado de intentarlo todo y no ver resultados. De hacer dietas,
-        rutinas, motivarte un par de días y
-        <b>volver al mismo punto de siempre, o incluso peor.</b><br />
-        No es tu culpa. Nadie te ha guiado cómo se debe. Nadie te ha acompañado
-        de verdad.<br />
-        <b>Pero eso se acabó.</b><br /><br />
-        <div
+        <p><strong>No todos llegan hasta aquí.</strong></p>
+
+        <p>
+          Si estás leyendo esto, significa que
+          <strong>de verdad quieres cambiar tu cuerpo</strong> y
+          <strong><u>aprender a conseguir resultados impresionantes</u></strong
+          >.
+        </p>
+
+        <p>
+          Este formulario es el primer paso del método que está ayudando a
+          muchos jóvenes a <em>dejar de perder el tiempo</em> en el gimnasio y
+          <strong>conseguir resultados reales y sostenibles</strong>.
+        </p>
+
+        <br /><br />
+        <!--<div
           style="
             display: flex;
-            gap: 22px;
+            align-items: center;
             justify-content: center;
-            align-items: flex-start;
-            flex-wrap: wrap;
+            gap: 20px; /* margen uniforme entre imágenes */
+            flex-wrap: nowrap;
+            padding: 0 20px; /* margen entre los extremos y el borde del contenedor */
           "
         >
           <img
             src="fotos/anxo1.JPG"
             alt="Foto 1"
             style="
-              max-height: 220px;
+              max-height: 260px;
               border-radius: 18px;
-              width: auto;
-              max-width: 48vw;
+              width: 35%;
               box-shadow: 0 2px 12px #0001;
+              object-fit: cover;
             "
           />
 
           <img
             src="fotos/flecha-removebg-preview.png"
             alt="Flecha"
-            style="max-height: 220px; width: auto; max-width: 48vw"
+            style="
+              max-height: 160px; /* imagen más pequeña */
+              width: 20%;
+              object-fit: contain;
+              flex-shrink: 0;
+            "
           />
 
           <img
             src="fotos/anxo2.JPG"
             alt="Foto 2"
             style="
-              max-height: 220px;
+              max-height: 260px;
               border-radius: 18px;
-              width: auto;
-              max-width: 48vw;
+              width: 35%;
               box-shadow: 0 2px 12px #0001;
+              object-fit: cover;
+            "
+          />
+        </div>-->
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: nowrap;
+          "
+        >
+          <img
+            src="fotos/anxo1.JPG"
+            alt="Foto 1"
+            style="
+              max-height: 260px;
+              border-radius: 18px;
+              width: 40%;
+              box-shadow: 0 2px 12px #0001;
+              object-fit: cover;
+            "
+          />
+
+          <img
+            src="fotos/flecha-removebg-preview.png"
+            alt="Flecha"
+            style="max-height: 180px; width: 20%; object-fit: contain"
+          />
+
+          <img
+            src="fotos/anxo2.JPG"
+            alt="Foto 2"
+            style="
+              max-height: 260px;
+              border-radius: 18px;
+              width: 40%;
+              box-shadow: 0 2px 12px #0001;
+              object-fit: cover;
             "
           />
         </div>
 
         <br />
         <br />
-        Conseguí este cambio físico en <b>solo 2 años</b>, y llevo
-        <b>5 años haciendo ejercicio</b>. Pasé de entrenar en casa con calistenia a dominar
-        el gimnasio, desarrollando tanto la capacidad de ganar masa muscular
-        como la de perder grasa. Todo esto lo logré a base de errores, estudio,
-        entrenadores personales, estancamientos y esfuerzo. <br />Pero ahora,
-        <b>CLARAMENTE, ya no te va a pasar a ti.</b>
-        <br />
-        <br />
-        <b>Conmigo lograrás el cambio que llevas años deseando.</b> No importa
-        si ahora mismo te ves lejos. Yo sé cómo llevarte paso a paso hasta esa
-        versión de ti con la que sueñas — fuerte, seguro/a, feliz, con un cuerpo
-        que por fin te haga sentir orgulloso/a cada vez que te mires al
-        espejo.<br />
-        He ayudado a personas que estaban igual o peor que tú… y ahora están
-        irreconocibles. Y si ellos pudieron, tú también vas a poder.
-        <b>Con mi método, contigo al 100%, y con un plan real.</b><br />
-        <b
-          >Este formulario es solo para personas decididas a dar el paso. Si
-          estás listo/a para invertir en ti, en serio, este es el momento.</b
-        >
+        <p>
+          <strong>Yo también empecé sin saber entrenar ni comer bien.</strong>
+        </p>
+
+        <p>
+          Fallé, aprendí y ahora ayudo a otros a hacerlo sin perder años de
+          progreso gracias a mi método <strong>INM</strong> (<u
+            >Intensidad, Nutrición y Medición</u
+          >).
+        </p>
+
+        <p>
+          Rellénalo cuanto antes, porque
+          <strong>trabajo con plazas limitadas</strong> para poder dar una
+          <em>atención real</em> a cada persona.
+        </p>
       </div>
 
-      <ul class="bullet-list">
-        <li>
-          Plan a tu completa medida para que no sufras consiguiendo tu cambio y
-          sea muy fácil, con contacto conmigo las 24 horas.
-        </li>
-        <li>
-          Conmigo aprenderás el por qué de las cosas para que en muy poco tiempo
-          puedas hacerlo solo y seguir progresando sin mí, no como todos los
-          entrenadores que te pautan cosas, no te las explican y te quieren
-          cobrar todos los meses durante 2 años.
-        </li>
-        <li>Plazas limitadas, para dar el mejor servicio :)</li>
-        <li>
-          Y cuando consigas al fin tu cambio... Te regalaré una camiseta del SK
-          Team, personalizada con tu nombre, hecha a mano personalmente por mí.
-        </li>
-      </ul>
-
-      <div class="rellena-mensaje">
-        <span class="llama">&#128293;</span>
-        Rellena esto con sinceridad. Yo me encargo del resto.<br />
-        Vamos a por ese cambio real. Ya no estás solo.
-      </div>
-
-      <form
-        action="guardar_datos.php"
-        method="POST"
-        autocomplete="on"
-      >
+      <form action="guardar_datos.php" method="POST" autocomplete="on">
+        <!-- 1 NOMBRE Y EDAD -->
         <label for="nombre"
           >¿Cuál es tu nombre completo? <span class="required">*</span></label
         >
@@ -281,119 +273,127 @@
           required
         />
 
-        <label for="molestia"
-          >¿Qué te molesta más de tu cuerpo o de cómo te sientes contigo mismo/a
-          ahora? <span class="required">*</span></label
+        <!-- 2 OBJETIVO EN EL GYM -->
+        <label for="objetivo"
+          >¿Cuál es tu objetivo en el gym ahora mismo?
+          <span class="required">*</span></label
         >
-        <textarea
-          name="molestia"
-          id="molestia"
-          rows="2"
-          required
-          maxlength="1000"
-        ></textarea>
+        <select name="objetivo" id="objetivo" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="ganar_musculo">Ganar músculo</option>
+          <option value="perder_grasa">Perder grasa</option>
+          <option value="salud">Estar saludable</option>
+          <option value="otro">Otro</option>
+        </select>
 
-        <label for="historial"
-          >¿Has intentado cambiar tu físico antes? ¿Qué pasó?
+        <!-- 3 NIVEL EN EL GIMNASIO -->
+        <label for="nivel"
+          >¿Qué nivel tienes en el gimnasio?
+          <span class="required">*</span></label
+        >
+        <select name="nivel" id="nivel" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="principiante">Principiante (menos de 6 meses)</option>
+          <option value="intermedio">Intermedio (6–18 meses)</option>
+          <option value="avanzado">Avanzado (más de 1 año entrenando)</option>
+        </select>
+
+        <!-- 4 FRUSTRACIÓN -->
+        <label for="frustracion"
+          >¿Qué es lo que más te frustra de tu progreso ahora mismo?
           <span class="required">*</span></label
         >
         <textarea
-          name="historial"
-          id="historial"
+          name="frustracion"
+          id="frustracion"
           rows="2"
           required
           maxlength="1000"
         ></textarea>
 
-        <label for="impacto"
-          >¿Cómo crees que tener el físico de tus sueños afectaría a tu vida?
+        <!-- 5 QUÉ LE HA FRENADO -->
+        <label for="freno"
+          >¿Qué crees que te ha frenado hasta ahora para conseguir tu cambio
+          físico? <span class="required">*</span></label
+        >
+        <textarea
+          name="freno"
+          id="freno"
+          rows="2"
+          required
+          maxlength="1000"
+        ></textarea>
+
+        <!-- 6 TIPO DE AYUDA -->
+        <label for="ayuda"
+          >¿Qué tipo de ayuda estás buscando ahora mismo?
           <span class="required">*</span></label
         >
-        <textarea
-          name="impacto"
-          id="impacto"
-          rows="2"
-          required
-          maxlength="1000"
-        ></textarea>
+        <select name="ayuda" id="ayuda" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="guiado_completo">
+            Quiero que me guíes paso a paso con todo (entrenamiento + nutrición)
+          </option>
+          <option value="orientacion">
+            Solo necesito orientación o estructura
+          </option>
+          <option value="aprender">
+            Quiero aprender a hacerlo por mi cuenta, pero con alguien que me
+            enseñe bien
+          </option>
+        </select>
 
-        <label for="razon"
-          >¿Por qué debería elegirte a ti para cambiar tu cuerpo y no a los
-          demás? <span class="required">*</span></label
+        <!-- 7 INVERSIÓN -->
+        <label for="inversion"
+          >¿Cuánto estás dispuesto a invertir en ti mismo para conseguir el
+          resultado que buscas? <span class="required">*</span></label
         >
-        <textarea
-          name="razon"
-          id="razon"
-          rows="2"
-          required
-          maxlength="1000"
-        ></textarea>
+        <select name="inversion" id="inversion" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="1-10">Entre 1 y 10 €</option>
+          <option value="10-40">Entre 10 y 40 €</option>
+          <option value="40-100">Entre 40 y 100 €</option>
+        </select>
 
-        <label for="gmail">¿Cuál es tu Gmail personal?</label>
-        <input
-          type="email"
-          name="gmail"
-          id="gmail"
-          maxlength="120"
-          autocomplete="email"
-        />
-
-        <label for="instagram"
-          >¿Cuál es tu @ de Instagram?<br />
-          <span class="note">Por ejemplo, @sk.fitss</span>
-        </label>
-        <input
-          type="text"
-          name="instagram"
-          id="instagram"
-          maxlength="60"
-          autocomplete="off"
-        />
-
-        <label for="telefono">¿Cuál es tu número de teléfono?</label>
+        <!-- 8 TELÉFONO -->
+        <label for="telefono"
+          >Número de teléfono (incluye prefijo).
+          <span class="required">*</span></label
+        >
         <input
           type="tel"
           name="telefono"
           id="telefono"
-          maxlength="18"
+          maxlength="20"
+          required
           autocomplete="tel"
         />
 
-        <label for="inversion"
-          >¿Estás dispuesto/a a invertir en ti mismo/a con un plan
-          personalizado, seguimiento diario y todo lo necesario para transformar
-          tu cuerpo, sabiendo que los programas con mi acompañamiento completo
-          parten desde solo 99 € al mes (o el equivalente a tu moneda)?<span class="required">*</span></label
-        >
-        <select name="inversion" id="inversion" required>
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">
-            Sí, lo tengo claro. Es el momento de hacerlo bien y conseguir mi
-            sueño
-          </option>
-          <option value="no">
-            No, prefiero gastar mi dinero en otras cosas que me alejan de mi
-            objetivo
-          </option>
-        </select>
-
-        <label for="contacto"
-          >¿Por dónde te gustaría que te contactara para estudiar tu caso y
-          agendar una llamada? <span class="required">*</span></label
-        >
-        <select name="contacto" id="contacto" required>
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="gmail">Correo electrónico</option>
-          <option value="instagram">Instagram</option>
-          <option value="telefono">WhatsApp / llamada telefónica</option>
-        </select>
-
+        <!-- TEXTO FINAL -->
         <div class="consent">
-          Este formulario es solo para personas comprometidas. Tus datos no
-          serán compartidos.
+          <p><strong>Este formulario no garantiza plaza.</strong></p>
+
+          <p>
+            Solo trabajo con un
+            <strong>número limitado de personas</strong> para asegurar
+            <u>resultados reales</u>.
+          </p>
+
+          <p>
+            Si encajas, te escribiré personalmente en las próximas horas por
+            <strong>WhatsApp</strong> para analizar tu caso y explicarte
+            <em>cómo trabajaríamos juntos</em>.
+          </p>
+
+          <p><strong>Tu cambio empieza cuando tomas acción.</strong></p>
         </div>
-        <button type="submit" class="btn-primary">Enviar mis respuestas</button>
+
+        <!-- BOTÓN -->
+        <button type="submit" class="btn-primary">
+          ENVIAR MI CASO PARA REVISIÓN
+        </button>
       </form>
+
       <div class="note" style="text-align: left">
         Si tienes dudas, escríbeme: <b>skfit03@gmail.com</b>
       </div>
