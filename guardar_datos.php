@@ -1,39 +1,35 @@
 <?php
-// Mostrar errores (importante para detectar fallos en InfinityFree)
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-// 📌 CONEXIÓN A LA BASE DE DATOS (INFINITYFREE)
+// Conexión a la base de datos
 $conn = new mysqli(
-    'sql113.infinityfree.com',     // 🔁 Tu host en InfinityFree
-    'if0_39536488',                // 🔁 Tu usuario
-    'Liki1223',                    // 🔁 Tu contraseña (segura y exacta)
-    'if0_39536488_asesoriasdb'     // 🔁 Tu nombre real de base de datos
+    'sql113.infinityfree.com',
+    'if0_39536488',
+    'Liki1223',
+    'if0_39536488_asesoriasdb'
 );
 
-// Verificar conexión
 if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
 
-// 📝 RECOGER DATOS DEL FORMULARIO
-$nombre    = $_POST['nombre'] ?? '';
-$edad      = $_POST['edad'] ?? '';
-$molestia  = $_POST['molestia'] ?? '';
-$historial = $_POST['historial'] ?? '';
-$impacto   = $_POST['impacto'] ?? '';
-$razon     = $_POST['razon'] ?? '';
-$gmail     = $_POST['gmail'] ?? '';
-$instagram = $_POST['instagram'] ?? '';
-$telefono  = $_POST['telefono'] ?? '';
-$inversion = $_POST['inversion'] ?? '';
-$contacto  = $_POST['contacto'] ?? '';
-$fecha     = date("Y-m-d H:i:s"); // Nueva columna si quieres guardar la fecha
+// Recoger datos del formulario (con nombres según HTML)
+$nombre     = $_POST['nombre'] ?? '';
+$edad       = $_POST['edad'] ?? '';
+$objetivo   = $_POST['objetivo'] ?? '';
+$nivel      = $_POST['nivel'] ?? '';
+$frustracion= $_POST['frustracion'] ?? '';
+$freno      = $_POST['freno'] ?? '';
+$ayuda      = $_POST['ayuda'] ?? '';
+$inversion  = $_POST['inversion'] ?? '';
+$telefono   = $_POST['telefono'] ?? '';
+$fecha      = date("Y-m-d H:i:s");
 
-// CONSULTA PREPARADA
+// Consulta preparada (ajusta los nombres de columnas en tu tabla si es necesario)
 $sql = "INSERT INTO registros 
-(nombre, edad, molestia, historial, impacto, razon, gmail, instagram, telefono, inversion, contacto, fecha) 
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+(nombre, edad, objetivo, nivel, frustracion, freno, ayuda, inversion, telefono, fecha)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $conn->prepare($sql);
 
@@ -42,21 +38,18 @@ if (!$stmt) {
 }
 
 $stmt->bind_param(
-    "ssssssssssss",
-    $nombre, $edad, $molestia, $historial, $impacto,
-    $razon, $gmail, $instagram, $telefono, $inversion, $contacto, $fecha
+    "sissssssss",
+    $nombre, $edad, $objetivo, $nivel, $frustracion, $freno, $ayuda, $inversion, $telefono, $fecha
 );
 
-// Ejecutar y verificar
 if (!$stmt->execute()) {
     die("Error al guardar los datos: " . $stmt->error);
 }
 
-// Cerrar conexiones
 $stmt->close();
 $conn->close();
 
-// ✅ REDIRECCIONAR A GRACIAS
-header("Location: gracias.html");
+header("Location: https://wa.me/34604002796/?text=Hey%20sk%2C%20mi%20situaci%C3%B3n%20encaja%20para%20que%20me%20puedas%20ayudar%20a%20cambiar%20mi%20f%C3%ADsico%3F");
 exit();
+
 ?>

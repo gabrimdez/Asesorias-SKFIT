@@ -1,6 +1,8 @@
 <?php
 require 'credenciales.php';
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 session_start();
 
@@ -94,33 +96,30 @@ echo "<table>";
 echo "<tr>
 <th>Nombre</th>
 <th>Edad</th>
-<th>Molestia</th>
-<th>Historial</th>
-<th>Impacto</th>
-<th>Razón</th>
-<th>Gmail</th>
-<th>Instagram</th>
-<th>Teléfono</th>
+<th>Objetivo</th>
+<th>Nivel</th>
+<th>Frustración</th>
+<th>Freno</th>
+<th>Ayuda</th>
 <th>Inversión</th>
-<th>Contacto</th>
+<th>Teléfono</th>
 <th>Fecha</th>
 </tr>";
 
-// DIBUJAR CADA FILA DE RESPUESTAS
-while($row = $result->fetch_assoc()) {
+while ($row = $result->fetch_assoc()) {
     echo "<tr>
         <td>" . htmlspecialchars($row['nombre'] ?? '') . "</td>
         <td>" . htmlspecialchars($row['edad'] ?? '') . "</td>
-        <td>" . htmlspecialchars($row['molestia'] ?? '') . "</td>
-        <td>" . htmlspecialchars($row['historial'] ?? '') . "</td>
-        <td>" . htmlspecialchars($row['impacto'] ?? '') . "</td>
-        <td>" . htmlspecialchars($row['razon'] ?? '') . "</td>
-        <td>" . htmlspecialchars($row['gmail'] ?? '') . "</td>
-        <td>" . htmlspecialchars($row['instagram'] ?? '') . "</td>
-        <td>" . htmlspecialchars($row['telefono'] ?? '') . "</td>
+        <td>" . htmlspecialchars($row['objetivo'] ?? '') . "</td>
+        <td>" . htmlspecialchars($row['nivel'] ?? '') . "</td>
+        <td>" . htmlspecialchars($row['frustracion'] ?? '') . "</td>
+        <td>" . htmlspecialchars($row['freno'] ?? '') . "</td>
+        <td>" . htmlspecialchars($row['ayuda'] ?? '') . "</td>
         <td>" . htmlspecialchars($row['inversion'] ?? '') . "</td>
-        <td>" . htmlspecialchars($row['contacto'] ?? '') . "</td>
+        <td>" . htmlspecialchars($row['telefono'] ?? '') . "</td>
         <td>" . htmlspecialchars($row['fecha'] ?? '') . "</td>
     </tr>";
 }
+
+echo "</table>";
 
