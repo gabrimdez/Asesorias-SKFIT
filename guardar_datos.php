@@ -2,54 +2,66 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-// Conexión a la base de datos
+// CONEXIÓN A BD
 $conn = new mysqli(
-    'sql113.infinityfree.com',
-    'if0_39536488',
-    'Liki1223',
-    'if0_39536488_asesoriasdb'
+    "sql113.infinityfree.com",
+    "if0_39536488",
+    "Liki1223",
+    "if0_39536488_asesoriasdb"
 );
 
 if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
+    die("Error conexión: " . $conn->connect_error);
 }
 
-// Recoger datos del formulario (con nombres según HTML)
-$nombre     = $_POST['nombre'] ?? '';
-$edad       = $_POST['edad'] ?? '';
-$objetivo   = $_POST['objetivo'] ?? '';
-$nivel      = $_POST['nivel'] ?? '';
-$frustracion= $_POST['frustracion'] ?? '';
-$freno      = $_POST['freno'] ?? '';
-$ayuda      = $_POST['ayuda'] ?? '';
-$inversion  = $_POST['inversion'] ?? '';
-$telefono   = $_POST['telefono'] ?? '';
-$fecha      = date("Y-m-d H:i:s");
+// DATOS DEL FORMULARIO PREMIUM
+$nombre = $_POST['nombre'] ?? null;
+$edad = $_POST['edad'] ?? null;
+$pais_ciudad = $_POST['pais_ciudad'] ?? null;
+$instagram = $_POST['instagram'] ?? null;
+$ocupacion = $_POST['ocupacion'] ?? null;
+$meta = $_POST['meta'] ?? null;
+$error = $_POST['error'] ?? null;
+$porque_skyfit = $_POST['porque_skyfit'] ?? null;
+$compromiso = $_POST['compromiso'] ?? null;
+$situacion_financiera = $_POST['situacion_financiera'] ?? null;
+$telefono = $_POST['telefono'] ?? null;
+$fecha = date("Y-m-d H:i:s");
 
-// Consulta preparada (ajusta los nombres de columnas en tu tabla si es necesario)
+// INSERT PREMIUM
 $sql = "INSERT INTO registros 
-(nombre, edad, objetivo, nivel, frustracion, freno, ayuda, inversion, telefono, fecha)
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+(nombre, edad, pais_ciudad, instagram_premium, ocupacion, meta, error_meta, porque_skyfit, compromiso, situacion_financiera, telefono, fecha)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $conn->prepare($sql);
 
 if (!$stmt) {
-    die("Error al preparar consulta: " . $conn->error);
+    die("Error SQL: " . $conn->error);
 }
 
 $stmt->bind_param(
-    "sissssssss",
-    $nombre, $edad, $objetivo, $nivel, $frustracion, $freno, $ayuda, $inversion, $telefono, $fecha
+    "sissssssisss",
+    $nombre,
+    $edad,
+    $pais_ciudad,
+    $instagram,
+    $ocupacion,
+    $meta,
+    $error,
+    $porque_skyfit,
+    $compromiso,
+    $situacion_financiera,
+    $telefono,
+    $fecha
 );
 
 if (!$stmt->execute()) {
-    die("Error al guardar los datos: " . $stmt->error);
+    die("Error al guardar: " . $stmt->error);
 }
 
 $stmt->close();
 $conn->close();
 
-header("Location: https://wa.me/34604002796/?text=Hey%20sk%2C%20mi%20situaci%C3%B3n%20encaja%20para%20que%20me%20puedas%20ayudar%20a%20cambiar%20mi%20f%C3%ADsico%3F");
+// REDIRECCIÓN WHATSAPP
+header("Location: https://wa.me/34604002796/?text=Hey%20SKFITSS,%20acabo%20de%20enviar%20mi%20caso%20premium");
 exit();
-
-?>

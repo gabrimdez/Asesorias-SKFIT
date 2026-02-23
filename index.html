@@ -1,368 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Primer Paso hacia tu Cambio Físico</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Montserrat", Arial, sans-serif;
-        background: linear-gradient(120deg, #f7fafc, #faf2f2 100%);
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
-        color: #222;
-      }
-      .container {
-        max-width: 540px;
-        margin: 40px auto 0 auto;
-        padding: 32px;
-        box-shadow: 0 8px 32px rgba(44, 45, 56, 0.1);
-        background: #fff;
-        border-radius: 24px;
-        border: 1px solid #eee;
-      }
-      .titulo-motivacional {
-        font-size: clamp(2.2rem, 4vw, 2.4rem);
-        font-weight: 700;
-        margin-bottom: 18px;
-        color: #fa0303;
-        text-align: center;
-        line-height: 1.22;
-        letter-spacing: -0.03em;
-      }
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario Premium SKFITSS</title>
 
-      .intro-motivacional {
-        font-size: 1.02rem;
-        color: #333;
-        line-height: 1.55;
-        margin-bottom: 18px;
-      }
-      label {
-        display: block;
-        font-weight: 500;
-        margin: 18px 0 4px 0;
-        color: #333;
-        font-size: 0.99rem;
-        letter-spacing: 0.1px;
-      }
-      input,
-      textarea,
-      select {
-        width: 100%;
-        padding: 12px 10px;
-        border: 1.4px solid #e0e0e0;
-        border-radius: 9px;
-        margin-bottom: 4px;
-        font-size: 1rem;
-        resize: vertical;
-        font-family: inherit;
-        background: #f9f9fb;
-        transition: border 0.18s;
-      }
-      input:focus,
-      textarea:focus,
-      select:focus {
-        border-color: #f76918;
-        outline: none;
-        background: #fff;
-      }
-      .required {
-        color: #f60404;
-        font-size: 1.15em;
-        margin-left: 3px;
-      }
-      .consent {
-        font-size: 0.94rem;
-        margin-top: 22px;
-        color: #444;
-      }
-      .btn-primary {
-        display: block;
-        width: 100%;
-        background: linear-gradient(90deg, #fb6607, #fdaa2c 96%);
-        color: #fff;
-        font-weight: 700;
-        border: none;
-        border-radius: 9px;
-        font-size: 1.11rem;
-        padding: 15px;
-        margin: 28px 0 0 0;
-        box-shadow: 0 2px 6px rgba(44, 45, 56, 0.1);
-        cursor: pointer;
-        letter-spacing: 0.07em;
-        transition: background 0.16s;
-      }
-      .btn-primary:hover {
-        background: linear-gradient(90deg, #fa0303, #fa0303 100%);
-      }
-      .note {
-        font-size: 0.94rem;
-        color: #888;
-        margin-bottom: 2px;
-        margin-top: 19px;
-        text-align: right;
-      }
-      @media (max-width: 640px) {
-        .container {
-          padding: 15px;
-          border-radius: 11px;
-          margin: 16px 6px;
-        }
-        .titulo-motivacional {
-          font-size: 2rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="titulo-motivacional">ESTAS A UN PASO DE TU CAMBIO FÍSICO</div>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-      <div class="intro-motivacional">
-        <p><strong>No todos llegan hasta aquí.</strong></p>
+<style>
+:root{
+  --bg:#000;
+  --red:#ff0000;
+  --text:#eaeaea;
+  --muted:#9ca3af;
+  --card:#0b0b0b;
+  --border:#1f1f1f;
+}
 
-        <p>
-          Si estás leyendo esto, significa que
-          <strong>de verdad quieres cambiar tu cuerpo</strong> y
-          <strong><u>aprender a conseguir resultados impresionantes</u></strong
-          >.
-        </p>
+*{
+  box-sizing:border-box;
+  font-family:Inter, system-ui, sans-serif;
+}
 
-        <p>
-          Este formulario es el primer paso del método que está ayudando a
-          muchos jóvenes a <em>dejar de perder el tiempo</em> en el gimnasio y
-          <strong>conseguir resultados reales y sostenibles</strong>.
-        </p>
+body{
+  background:radial-gradient(circle at top, #0a0a0a 0%, #000 60%);
+  color:var(--text);
+  margin:0;
+  padding:0;
+}
 
-        <br /><br />
-        
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: nowrap;
-          "
-        >
-          <img
-            src="fotos/anxo1.JPG"
-            alt="Foto 1"
-            style="
-              max-height: 260px;
-              border-radius: 18px;
-              width: 40%;
-              box-shadow: 0 2px 12px #0001;
-              object-fit: cover;
-            "
-          />
+.wrapper{
+  max-width:680px;
+  margin:auto;
+  padding:30px 20px 60px;
+}
 
-          <img
-            src="fotos/flecha-removebg-preview.png"
-            alt="Flecha"
-            style="max-height: 180px; width: 20%; object-fit: contain"
-          />
+/* Firma */
+.firma{
+  display:block;
+  margin:0 auto 20px;
+  max-width:500px; /* antes 160px */
+}
 
-          <img
-            src="fotos/anxo2.JPG"
-            alt="Foto 2"
-            style="
-              max-height: 260px;
-              border-radius: 18px;
-              width: 40%;
-              box-shadow: 0 2px 12px #0001;
-              object-fit: cover;
-            "
-          />
-        </div>
+/* Título */
+h1{
+  font-size:clamp(2rem,4vw,2.6rem);
+  font-weight:900;
+  text-align:center;
+  color:var(--red);
+  letter-spacing:-0.03em;
+  margin-bottom:15px;
+}
 
-        <br />
-        <br />
-        <p>
-          <strong>Yo también empecé sin saber entrenar ni comer bien.</strong>
-        </p>
+/* Texto marketing */
+.hero-text{
+  text-align:center;
+  font-size:1.05rem;
+  color:var(--muted);
+  line-height:1.6;
+  margin-bottom:35px;
+}
 
-        <p>
-          Fallé, aprendí y ahora ayudo a otros a hacerlo sin perder años de
-          progreso gracias a mi método <strong>INM</strong> (<u
-            >Intensidad, Nutrición y Medición</u
-          >).
-        </p>
+/* Tarjeta formulario */
+.form-card{
+  background:linear-gradient(180deg,#0d0d0d,#050505);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:25px;
+  box-shadow:0 10px 50px rgba(0,0,0,.8);
+}
 
-        <p>
-          Rellénalo cuanto antes, porque
-          <strong>trabajo con plazas limitadas</strong> para poder dar una
-          <em>atención real</em> a cada persona.
-        </p>
-      </div>
+label{
+  font-size:.95rem;
+  font-weight:600;
+  margin-top:18px;
+  display:block;
+}
 
-      <form action="guardar_datos.php" method="POST" autocomplete="on">
-        <!-- 1 NOMBRE Y EDAD -->
-        <label for="nombre"
-          >¿Cuál es tu nombre completo? <span class="required">*</span></label
-        >
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          required
-          maxlength="90"
-          autocomplete="name"
-        />
+input, textarea, select{
+  width:100%;
+  background:#050505;
+  border:1px solid #1f1f1f;
+  color:white;
+  padding:14px;
+  border-radius:10px;
+  margin-top:6px;
+  font-size:.95rem;
+  transition:.2s;
+}
 
-        <label for="edad"
-          >¿Qué edad tienes? <span class="required">*</span></label
-        >
-        <input
-          type="number"
-          name="edad"
-          id="edad"
-          min="10"
-          max="99"
-          step="1"
-          required
-        />
+input:focus, textarea:focus, select:focus{
+  outline:none;
+  border-color:var(--red);
+  box-shadow:0 0 0 2px rgba(255,0,0,.15);
+}
 
-        <!-- 2 OBJETIVO EN EL GYM -->
-        <label for="objetivo"
-          >¿Cuál es tu objetivo en el gym ahora mismo?
-          <span class="required">*</span></label
-        >
-        <select name="objetivo" id="objetivo" required>
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="ganar_musculo">Ganar músculo</option>
-          <option value="perder_grasa">Perder grasa</option>
-          <option value="salud">Estar saludable</option>
-          <option value="otro">Otro</option>
-        </select>
+textarea{
+  min-height:100px;
+  resize:vertical;
+}
 
-        <!-- 3 NIVEL EN EL GIMNASIO -->
-        <label for="nivel"
-          >¿Qué nivel tienes en el gimnasio?
-          <span class="required">*</span></label
-        >
-        <select name="nivel" id="nivel" required>
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="principiante">Principiante (menos de 6 meses)</option>
-          <option value="intermedio">Intermedio (6–18 meses)</option>
-          <option value="avanzado">Avanzado (más de 1 año entrenando)</option>
-        </select>
+/* Botón premium */
+button{
+  width:100%;
+  margin-top:28px;
+  padding:16px;
+  background:linear-gradient(135deg,#ff0000,#ff3b3b);
+  border:none;
+  border-radius:12px;
+  font-weight:900;
+  font-size:1.1rem;
+  color:white;
+  cursor:pointer;
+  letter-spacing:.05em;
+  box-shadow:0 8px 30px rgba(255,0,0,.4);
+  transition:.2s;
+}
 
-        <!-- 4 FRUSTRACIÓN -->
-        <label for="frustracion"
-          >¿Qué es lo que más te frustra de tu progreso ahora mismo?
-          <span class="required">*</span></label
-        >
-        <textarea
-          name="frustracion"
-          id="frustracion"
-          rows="2"
-          required
-          maxlength="1000"
-        ></textarea>
+button:hover{
+  transform:translateY(-1px);
+  box-shadow:0 12px 40px rgba(255,0,0,.6);
+}
 
-        <!-- 5 QUÉ LE HA FRENADO -->
-        <label for="freno"
-          >¿Qué crees que te ha frenado hasta ahora para conseguir tu cambio
-          físico? <span class="required">*</span></label
-        >
-        <textarea
-          name="freno"
-          id="freno"
-          rows="2"
-          required
-          maxlength="1000"
-        ></textarea>
+/* Nota */
+.note{
+  margin-top:20px;
+  font-size:.9rem;
+  color:var(--muted);
+  text-align:center;
+}
+</style>
+</head>
 
-        <!-- 6 TIPO DE AYUDA -->
-        <label for="ayuda"
-          >¿Qué tipo de ayuda estás buscando ahora mismo?
-          <span class="required">*</span></label
-        >
-        <select name="ayuda" id="ayuda" required>
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="guiado_completo">
-            Quiero que me guíes paso a paso con todo (entrenamiento + nutrición)
-          </option>
-          <option value="orientacion">
-            Solo necesito orientación o estructura
-          </option>
-          <option value="aprender">
-            Quiero aprender a hacerlo por mi cuenta, pero con alguien que me
-            enseñe bien
-          </option>
-        </select>
+<body>
 
-        <!-- 7 INVERSIÓN -->
-        <label for="inversion"
-          >¿Cuánto estás dispuesto a invertir en ti mismo para conseguir el
-          resultado que buscas? <span class="required">*</span></label
-        >
-        <select name="inversion" id="inversion" required>
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="1-10">Entre 1 y 10 €</option>
-          <option value="10-40">Entre 10 y 40 €</option>
-          <option value="40-100">Entre 40 y 100 €</option>
-        </select>
+<div class="wrapper">
 
-        <!-- 8 TELÉFONO -->
-        <label for="telefono"
-          >Número de teléfono (incluye prefijo).
-          <span class="required">*</span></label
-        >
-        <input
-          type="tel"
-          name="telefono"
-          id="telefono"
-          maxlength="20"
-          required
-          autocomplete="tel"
-        />
+<!-- FIRMA ARRIBA -->
+<img src="fotos/firma.png" class="firma">
 
-        <!-- TEXTO FINAL -->
-        <div class="consent">
-          <p><strong>Este formulario no garantiza plaza.</strong></p>
+<h1>CONSIGUE TU CAMBIO FÍSICO EN MENOS DE 6 MESES</h1>
 
-          <p>
-            Solo trabajo con un
-            <strong>número limitado de personas</strong> para asegurar
-            <u>resultados reales</u>.
-          </p>
+<div class="hero-text">
+Un programa 1:1 hecho para ti, con acompañamiento constante, con resultados <b style="color:white;">GARANTIZADOS</b>,  
+o se te devuelve todo tu dinero y se trabaja contigo GRATIS hasta que lo consigas  
+(si cumples con los requisitos fijados por contrato).  
+<br><br>
+<b>Rellénalo con sinceridad.</b> Las plazas son limitadas y solo te contactaré si tu perfil encaja.
+</div>
 
-          <p>
-            Si encajas, te escribiré personalmente en las próximas horas por
-            <strong>WhatsApp</strong> para analizar tu caso y explicarte
-            <em>cómo trabajaríamos juntos</em>.
-          </p>
+<div class="form-card">
 
-          <p><strong>Tu cambio empieza cuando tomas acción.</strong></p>
-        </div>
+<form action="guardar_datos.php" method="POST">
 
-        <!-- BOTÓN -->
-        <button type="submit" class="btn-primary">
-          ENVIAR MI CASO PARA REVISIÓN
-        </button>
-      </form>
+<label>1. Nombre completo</label>
+<input type="text" name="nombre" required>
 
-      <div class="note" style="text-align: left">
-        Si tienes dudas, escríbeme: <b>skfit03@gmail.com</b>
-      </div>
-      <img
-        src="fotos/firma.png"
-        alt="Descripción de la foto"
-        style="
-          display: block;
-          margin: 30px auto 0 auto;
-          max-width: 180px;
-          width: 100%;
-          border-radius: 12px;
-        "
-      />
-    </div>
-  </body>
+<label>2. Edad</label>
+<input type="number" name="edad" required>
+
+<label>3. País y Ciudad</label>
+<input type="text" name="pais_ciudad" required>
+
+<label>4. Tu @ de Instagram</label>
+<input type="text" name="instagram" required>
+
+<label>5. ¿A qué te dedicas actualmente?</label>
+<select name="ocupacion" required>
+<option>Trabajo</option>
+<option>Estudio</option>
+<option>Ambas</option>
+<option>Ninguna</option>
+</select>
+
+<label>6. Meta física EXACTA en 6 meses</label>
+<textarea name="meta" required></textarea>
+
+<label>7. ¿Por qué no lo has logrado todavía?</label>
+<textarea name="error" required></textarea>
+
+<label>8. ¿Por qué quieres cambiar tu físico con SKFITSS?</label>
+<textarea name="porque_skyfit" required></textarea>
+
+<label>9. Nivel de COMPROMISO REAL (1-10)</label>
+<input type="number" name="compromiso" min="1" max="10" required>
+
+<label>10. Situación financiera</label>
+<select name="situacion_financiera" required>
+<option>Cuento con el dinero y quiero invertir hoy</option>
+<option>Tengo ingresos pero necesito pago a plazos</option>
+<option>No tengo capital, solo información</option>
+</select>
+
+<label>11. Número de WhatsApp</label>
+<input type="tel" name="telefono" required>
+
+<button type="submit">ENVIAR MI CASO A REVISIÓN</button>
+
+</form>
+
+<p class="note">
+Si tu perfil encaja, te contactaré para una llamada y organizar tu entrada al programa.<br>
+Al pulsar el botón se abrirá tu WhatsApp para confirmar la recepción.
+</p>
+
+</div>
+
+<!-- FIRMA ABAJO -->
+<img src="fotos/firma.png" class="firma" style="margin-top:30px;">
+
+</div>
+</body>
 </html>
